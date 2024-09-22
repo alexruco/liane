@@ -57,6 +57,7 @@ We welcome contributions from the community! Here’s how you can get involved:
 ## License 📄
 
 This project is licensed under the MIT License. Feel free to use, modify, and distribute this software in accordance with the terms outlined in the [LICENSE](LICENSE) file.
+
 Project named in honor of [Liane Margarida Rockenbach Tarouco](https://scholar.google.com/citations?user=LnxqSEQAAAAJ&hl=en), pioneer of AI and Computer Networks
 
 
