@@ -1,34 +1,33 @@
-# My Python Module 🚀
+# Liane 🚀
 
-Welcome to **My Python Module**! This project is designed to [brief description of what your module does].
+Welcome to **Liane**! This project is designed to manage interaction with AI by email.
+Named in honor of Liane Margarida Rockenbach Tarouco, pioneer of AI and Computer Networks
 
 ## Features ✨
 
-- **Feature 1**: Explain the first feature. 🎉
-- **Feature 2**: Explain the second feature. 🔥
-- **Feature 3**: Explain the third feature. 🌟
+- **Emails from user**. 🎉
+- **Email from admin**. 🔥
+- **Responses to both**. 🌟
 
 ## Installation 💻
 
 You can install the package via pip:
 
 ```bash
-pip install my_python_module
+pip install https://github.com/alexruco/liane/
 Usage 📚
 
 Here's a quick example to get you started:
 <!--
 ```python
-from my_python_module import module
+from my_python_module import answer_user_messages, answer_admin_messages
 
 # Example usage
-result = module.some_function(5, 10)
-print(result)
+response_to_user = answer_user_messages()
+response_to_admin = answer_admin_messages()
 ```
 -->
-Documentation 📖
 
-Documentation is available at [link to documentation].
 Running Tests 🧪
 
 To run the tests, you can use the unittest module or pytest.
