@@ -1,12 +1,12 @@
 # Liane 🚀
 
 Welcome to **Liane**! This project is designed to manage interaction with AI by email.
-Named in honor of Liane Margarida Rockenbach Tarouco, pioneer of AI and Computer Networks
+Named in honor of [Liane Margarida Rockenbach Tarouco](https://scholar.google.com/citations?user=LnxqSEQAAAAJ&hl=en), pioneer of AI and Computer Networks
 
 ## Features ✨
 
 - **Emails from user**. 🎉
-- **Email from admin**. 🔥
+- **Emails from admin**. 🔥
 - **Responses to both**. 🌟
 
 ## Installation 💻
