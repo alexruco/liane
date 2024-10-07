@@ -1,30 +1,26 @@
 # liane/main.py
 
 import os
-from dotenv import load_dotenv
+from env_loader import load_env  # Import the env_loader module first
+
+# Load environment variables before any other imports
+load_env()
+
 from db_handler import add_answered_column_if_not_exists, create_users_table
 from messages_handler import process_unanswered_emails
 from ellis import get_new_messages
-#from kate import get_response
-from message_responder import answer_emails  # Ensure this is correctly implemented
+from kate import get_response  # Now imported after environment variables are loaded
+from message_responder import answer_emails
+from users_handler import add_user
 
 def main():
-    # Adjust the path to point to the correct location of your .env file.
-    dotenv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '.env'))
-    # print(f"Loading environment variables from: {dotenv_path}")
-    load_dotenv(dotenv_path)  # Load environment variables from `.env`, if it exists.
-
-    # Ensure that required environment variables are set before importing `ellis`.
-    if not os.getenv("EMAIL_USERNAME") or not os.getenv("EMAIL_PASSWORD") or not os.getenv("IMAP_SERVER"):
-        raise EnvironmentError("EMAIL_USERNAME, EMAIL_PASSWORD, and IMAP_SERVER must be set in your environment.")
-
     # Fetch new messages using `ellis`.
     new_messages = get_new_messages()
 
-    # Add 'answered' column and create 'users' table if they don't exist.
+    # Ensure the database schema is up-to-date.
     add_answered_column_if_not_exists()
     create_users_table()
-
+    add_user('alex@ruco.pt', 'Alex Ruco', is_active=True)
     # Retrieve emails to process.
     emails_to_process = process_unanswered_emails()
 
