@@ -2,4 +2,3 @@ requests
 sqlite3
 git+https://github.com/alexruco/ellis.git@main#egg=ellis
 git+https://github.com/alexruco/kate.git@main#egg=kate
-git+https://github.com/alexruco/josephroulin.git@main#egg=josephroulin

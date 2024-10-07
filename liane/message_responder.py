@@ -1,7 +1,7 @@
 # liane/message_responder.py
 
 from kate import get_response  # Import kate's get_response function
-
+from ellis import send_message
 
 def answer_emails(email_data):
     """
@@ -31,7 +31,7 @@ def answer_emails(email_data):
         print(f"AI Response: {ai_response}")
 
         # Send the AI-generated response back to the sender
-
+        send_message(subject, body, sender_email, recipient_email)
 
         print(f"Response sent to {sender_email} for Email ID {email_id}.")
 

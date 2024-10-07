@@ -9,7 +9,6 @@ load_env()
 from db_handler import add_answered_column_if_not_exists, create_users_table
 from messages_handler import process_unanswered_emails
 from ellis import get_new_messages
-from kate import get_response  # Now imported after environment variables are loaded
 from message_responder import answer_emails
 from users_handler import add_user
 
